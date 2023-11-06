@@ -1,0 +1,166 @@
+.todo {
+  width: clamp(300px, 50%, 1000px);
+  padding: 30px;
+  border-radius: 25px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 1px 0px 16px -1px rgba(#000, 0.27);
+}
+
+.filterTasks {
+  margin-bottom: 20px;
+}
+
+.allTasks {
+  width: 100px;
+  height: 22px;
+  border-radius: 11px 0px 0px 11px;
+  border: none;
+  background-color: rgba(242, 243, 242, 0.945);
+  cursor: pointer;
+}
+
+.activeTasks {
+  width: 100px;
+  height: 22px;
+  margin: 0px 7px 0px 7px;
+  border: none;
+  background-color: rgba(242, 243, 242, 0.945);
+  cursor: pointer;
+}
+
+.complitedTasks {
+  width: 100px;
+  height: 22px;
+  border-radius: 0px 11px 11px 0px;
+  border: none;
+  background-color: rgba(242, 243, 242, 0.945);
+  cursor: pointer;
+}
+
+.searchContainer {
+  position: relative;
+  margin: 30px 0px;
+
+  width: 100%;
+  padding: 0px;
+}
+
+$common-border-radius: 30px;
+
+.searchInput {
+  width: 60%;
+  border-radius: $common-border-radius;
+  padding: 10px 20px;
+  font-size: 22px;
+  border: 2px solid teal;
+  flex-basis: 100%;
+  
+  outline: none;
+  &:focus {
+    border-color: #c8c8c8;
+  }
+}
+
+.addButton {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid teal;
+  border-radius: $common-border-radius;
+  padding: 0 40px;
+  margin: 0px;
+  background-color: white;
+  font-size: 22px;
+  color: #6b6b6b;
+  &:hover {
+    color: teal;
+  }
+  cursor: pointer;
+}
+
+.clearTasksBtn {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 15px;
+  color: #6b6b6b;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    color: red;
+    border: 2px solid;
+  }
+}
+
+.saveBtn {
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: white;
+  border: 1px solid teal;
+  border-radius: 15px;
+  color: #6b6b6b;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    color: teal;
+    border: 2px solid;
+  }
+}
+
+// Пользовательские стили
+
+ul {
+  padding: 0px;
+  width: 100%;
+}
+
+li {
+  height: 60px;
+  border-bottom: 1px solid teal;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1 {
+  color: teal;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 1px solid teal;
+  height: 0px;
+}
+
+.sort {
+  border: 0px;
+  box-shadow: 0px 0px 3px teal;
+  background-color: white;
+
+  width: 150px;
+  height: 30px;
+
+  margin: 20px;
+
+  &:hover {
+    background-color: teal;
+    color: white;
+  }
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.link:hover {
+  color: cyan;
+  cursor: pointer;
+}

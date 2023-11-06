@@ -1,0 +1,110 @@
+li {
+    display: flex;
+    margin: auto;
+    width: 600px;
+    height: 25px;
+}
+
+.delete {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(160, 0, 0);
+    border: 1px solid rgb(160, 0, 0);
+    color: white;
+
+    &:hover {
+        color: rgb(160, 0, 0);
+        background-color: white;
+        cursor: pointer;
+    }
+}
+.change {
+    width: 60px;
+    height: 30px;
+    background-color: teal;
+    border: 1px solid teal;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: teal;
+    }
+}
+
+.checkboxItem {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+}
+
+.textTask {
+    max-width: 560px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+// Пользовательские стили
+
+* {
+    transition-duration: 0.5s;
+}
+
+li {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid teal;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+    margin: 10px;
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+
+.isDone {
+    text-decoration: line-through;
+}
+.firstLine {
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+p {
+    width: 90%;
+    margin-left: 10px;
+
+    font-size: 20px;
+}
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+
+    box-shadow: teal 0px 0px 3px;
+    cursor: pointer;
+    outline: 0px;
+}
+input[type="text"] {
+    height: 30px;
+
+    font-size: 20px;
+    color: grey;
+
+    border: 0px;
+    box-shadow: 0px 0px 3px teal;
+}
+input[type="text"]:focus {
+    outline: 0px;
+    box-shadow: 0px 0px 5px rgb(0, 160, 160);
+
+    color: black;
+}
+.changePoll {
+    width: 80%;
+}
