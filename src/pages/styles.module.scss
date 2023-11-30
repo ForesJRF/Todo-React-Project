@@ -1,0 +1,56 @@
+// TaskInfo Page
+
+.taskInfo {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 40px;
+    
+    border-radius: 20px;
+    box-shadow: 0 0 5px gray;
+
+    text-align: center;
+
+    hr {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .taskName {
+        font-size: 46px;
+    }   
+    .taskDescription {
+        width: 100%;
+        margin: 0;
+    }
+
+    .descEditor {
+        width: 90%;
+        height: 150px;
+        font-size: 18px;
+        resize: none;
+        padding: 20px;
+        text-align: center;
+
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 4px teal;
+    }
+    .descSet {
+        position: absolute;
+        bottom: 35px;
+
+        width: 250px;
+        height: 50px;
+
+        font-size: 18px;
+    }
+}

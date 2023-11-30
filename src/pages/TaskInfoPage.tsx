@@ -7,6 +7,7 @@ import TodoSelectors from "../redux/selectors/todoSelectors";
 import { findTaskById } from "../shared/utils/tasksUtils";
 import { getTask } from "api/tasksApi";
 import { fetchEditTask } from "redux/reducers/todoReducer";
+import styles from "./styles.module.scss";
 
 const TaskInfoPage = () => {
   const { taskId } = useParams();
@@ -60,23 +61,24 @@ const TaskInfoPage = () => {
   };
 
   return (
-    <div>
-      <h1>{task?.text}</h1>
+    <div className={styles.taskInfo}>
+      <h1 className={styles.taskName}>{task?.text}</h1>
+      <hr/>
       {!isAddingDesc &&
         (task?.description ? (
-          <p>{task.description}</p>
+          <p className={styles.taskDescription}>{task.description}</p>
         ) : (
-          <button onClick={onAddDescClick}>Add description</button>
+          <button className={styles.descSet} onClick={onAddDescClick}>Add description</button>
         ))}
 
       {isAddingDesc && (
         <>
-          <textarea
+          <textarea className={styles.descEditor}
             onChange={onDescValChange}
             value={descVal}
             placeholder="Description"
           />
-          <button onClick={saveDesc}>Save</button>
+          <button className={styles.descSet} onClick={saveDesc}>Save</button>
         </>
       )}
     </div>

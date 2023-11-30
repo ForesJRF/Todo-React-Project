@@ -94,15 +94,15 @@ const Task = ({ task }: Props) => {
 
       {isEditing ? (
         <button onClick={onEditDone} className={styles.change}>
-          C
+          Change
         </button>
       ) : (
         <button onClick={onChangeTask} className={styles.change}>
-          S
+          Edit
         </button>
       )}
       <button onClick={onDeleteTask} className={styles.delete}>
-        X
+        Delete
       </button>
     </li>
   );

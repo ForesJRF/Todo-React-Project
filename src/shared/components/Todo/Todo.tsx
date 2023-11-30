@@ -87,7 +87,7 @@ const Todo = () => {
         onClick={() => dispatch(changeSortByAlpVal(SORT_TYPES.BY_ALPHABET))}
         className={styles.sort}
       >
-        Сортировка (А-Я)
+        Sort (A-Z)
       </button>
       <button
         onClick={() =>
@@ -95,7 +95,7 @@ const Todo = () => {
         }
         className={styles.sort}
       >
-        Сортировка (Я-А)
+        Sort (Z-A)
       </button>
       <div>
         <button

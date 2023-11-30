@@ -1,10 +1,26 @@
+$common-border-radius: 30px;
+
 .todo {
   width: clamp(300px, 50%, 1000px);
   padding: 30px;
   border-radius: 25px;
   background-color: #fff;
-  margin: 0 auto;
+  margin: 50px auto;
   box-shadow: 1px 0px 16px -1px rgba(#000, 0.27);
+}
+
+button {
+  border-radius: $common-border-radius;
+  border: none;
+  min-height: 30px;
+  min-width: 75px;
+  
+
+  &:hover {
+    color: white;
+    background-color: teal;
+    
+  }
 }
 
 .filterTasks {
@@ -46,8 +62,6 @@
   padding: 0px;
 }
 
-$common-border-radius: 30px;
-
 .searchInput {
   width: 60%;
   border-radius: $common-border-radius;
@@ -59,6 +73,7 @@ $common-border-radius: 30px;
   outline: none;
   &:focus {
     border-color: #c8c8c8;
+    
   }
 }
 
@@ -67,16 +82,13 @@ $common-border-radius: 30px;
   top: 0;
   bottom: 0;
   right: 0;
-  border: 2px solid teal;
+  border: 1px solid teal;
   border-radius: $common-border-radius;
   padding: 0 40px;
   margin: 0px;
   background-color: white;
   font-size: 22px;
   color: #6b6b6b;
-  &:hover {
-    color: teal;
-  }
   cursor: pointer;
 }
 
